@@ -1,0 +1,18 @@
+{
+    "videojocs": [
+        {
+            "id": 1,
+            "nom": "Yakuza Like a Dragon",
+            "edat": "+18",
+            "llançament": "2020",
+            "genere": "RPG",
+            "desarrolladora": "Ryu Ga Gotoku",
+            "plataformes": [
+                "PlayStation ",
+                "Xbox ",
+                "PC "
+            ],
+            "idiomes":["Español ", "Ingles ", "Japones "]
+        }
+    ]
+}
