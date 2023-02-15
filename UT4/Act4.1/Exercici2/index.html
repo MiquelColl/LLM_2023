@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Taula empleats</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container align-center">
+        <h1>Taula empleats</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nom i llinatges</th>
+                    <th scope="col">Telefon</th>
+                    <th scope="col">Especialitat</th>
+                    <th scope="col">Departaments</th>
+                </tr>
+            </thead>
+            <tbody id="llista-empleats">
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+
+        let taulaBody = document.getElementById("llista-empleats");
+        let empleatsList = [
+            {
+                "id": 1,
+                "nom": "Pere",
+                "llinatge": "Ferrer",
+                "telefon": 639623832,
+                "especialitats": ["Seguritat informàtica"],
+                "departament": "Sistemes"
+            },
+            {
+                "id": 2,
+                "nom": "Joan",
+                "llinatge": "Gomila",
+                "telefon": 904325735,
+                "especialitats": ["Python ", " Java"],
+                "departament": "Desenvolupament"
+            },
+            {
+                "id": 3,
+                "nom": "Sara",
+                "llinatge": "Gomez",
+                "telefon": 638310648,
+                "especialitats": ["Java"],
+                "departament": "Desenvolupament"
+            },
+            {
+                "id": 4,
+                "nom": "Xavi",
+                "llinatge": "Caraibe",
+                "telefon": 908234842,
+                "especialitats": ["Nòmines ", " Python"],
+                "departament": "Administració"
+            }
+        ];
+        for (let empleat of empleatsList) {
+            let fila = `
+                <tr>
+                    <th scope="row">${empleat.id}</th>
+                    <th>${empleat.nom}${empleat.llinatge}</th>
+                    <th>${empleat.telefon}</th>
+                    <th>${empleat.especialitats.toString()}</th>
+                    <th>${empleat.departament}</th>
+                </tr>
+            `;
+
+            taulaBody.innerHTML += fila;
+        }
+    </script>
+</body>
+
+</html>
