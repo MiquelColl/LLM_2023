@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>FITXA</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card mb-3 mt-4">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="img/rey-leon.jpg" class="card-img" style="width:60%">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 id="film-title" class="card-title"></h5>
+                        <div class="card-text">
+
+                            <dl class="row">
+                                <dt class="col-sm-3">Sinopsis</dt>
+                                <dd id="film-synopsi" class="col-sm-9"></dd>
+
+                                <dt class="col-sm-3">Gènere</dt>
+                                <dd id="film-genre" class="col-sm-9"></dd>
+
+                                <dt class="col-sm-3">Director</dt>
+                                <dd id="film-director" class="col-sm-9"></dd>
+
+                                <dt class="col-sm-3">Estrena</dt>
+                                <dd id="film-premiere" class="col-sm-9"></dd>
+
+                                <dt class="col-sm-3 text-truncate">Edat recomanada:</dt>
+                                <dd id="film-age" class="col-sm-9"><img src="img/age-tp.png" style="width:20px" /></dd>
+
+                                <dt class="col-sm-3 text-truncate">Horari</dt>
+                                <dd id="film-sessions" class="col-sm-9"></dd>
+                            </dl>
+                            <div class="container text-center">
+                                <button type="button" class="btn btn-warning" name="button"
+                                    onclick="history.back();">Torna</button>
+                            </div>
+                        </div>
+                        <p class="card-text"><small class="text-muted">Descompte del 10% per menors de 8 anys</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        let pelicula = {
+            "titol": "Gran Torino",
+            "sinopsi": " Kowalski (Clint Eastwood) es un anciano veterano de la guerra de Corea y trabajador jubilado de la fábrica de Ford, de actitud amargada y aparentemente intolerante con los inmigrantes quien acaba de enviudar después de 50 años de matrimonio con la única mujer a la que amo en toda su vida, por lo que ahora solo vive con la compañía de Daisy, su perra. El día del funeral de su esposa, Walt tiene la visita de las familia de su hijo, por quienes no siente gran afecto ya que los ve como personas materialistas y carentes de valores genuinos, lo cual se ve confirmado cuando su nieta adolescente de forma irrespetuosa le exige que al morir debe heredarle sus bienes, especialmente su Gran Torino '72 prácticamente nuevo, su posesión más apreciada.",
+            "genere": "Acción",
+            "director": "Clint Eastwood",
+            "edat": "+18",
+            "estrena": false,
+            "sessions": ["14:00 ", "16:00 ", "18:00 ", "20:00 "]
+        };
+
+        document.getElementById("film-title").innerHTML = pelicula.titol;
+        document.getElementById("film-synopsi").innerHTML = pelicula.sinopsi;
+        document.getElementById("film-genre").innerHTML = pelicula.genere;
+        document.getElementById("film-director").innerHTML = pelicula.director;
+        document.getElementById("film-age").innerHTML = pelicula.edat;
+        document.getElementById("film-premiere").innerHTML = (pelicula.estrena ? "Sí" : "No");
+
+        const contenidorSessions = document.getElementById("film-sessions");
+        for (let hora of pelicula.sessions) {
+            contenidorSessions.innerHTML += ` <span class="badge bg-primary py-2 my-2">${hora}</span> `;
+        }
+
+    </script>
+</body>
+
+</html>
