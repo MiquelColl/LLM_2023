@@ -246,7 +246,7 @@ function ex4Filter(products){
     }
     return newProducts;
 }
-//console.log("Ex.4:", ex4Filter(productsList));
+// console.log("Ex.4:", ex4Filter(productsList));
 
 // Funció que retorni els productes en stock que incloguin en el seu nom la paraula “gaming”
 function ex5Filter(products){

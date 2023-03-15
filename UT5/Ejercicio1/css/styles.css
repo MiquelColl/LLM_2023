@@ -1,0 +1,66 @@
+@import url();
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+}
+
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor{
+    width: 600px;
+    width: auto;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+/* / Escritorio grande / */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* / Escritorio pequeño / tablet / */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* / Tablets y phablets / */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+/* / Teléfonos / */
+@media only screen and (max-width: 575px){
+
+}

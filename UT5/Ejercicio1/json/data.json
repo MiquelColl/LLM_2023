@@ -1,0 +1,46 @@
+[
+    {
+        
+        "nom":"El conde de Montecristo",
+        "salida":1998,
+        "autor":"Alexandre Dumas",
+        "desc":"La novela empieza con Edmundo (Edmond) Dantès volviendo a Marsella, donde se encuentra con su familia y sus amigos. Dantès está a punto de recibir una promoción a capitán en la casa naviera mercante donde se encuentra empleado, y se apresta igualmente a casarse con una bella española, Mercedes [Mercédès, sic, en francés] Herrera."
+    },
+    {
+        "nom":"El salón de ambar",
+        "salida":1999,
+        "autor":"Matilde Asensi Carratalà",
+        "desc":"«El salón de ámbar», está ambientada temporalmente en la actualidad, que narra la historia de unos ladrones de obras de arte, ubicados en diferentes países y que se mantienen en contacto a través de Internet para planear sus actividades ilegales."
+    },
+    {
+        "nom":"Diez negritos",
+        "salida":1939,
+        "autor":"Agatha Chiistie",
+        "desc":"La novela más vendida de Agatha Christie, con unos 100 millones de ejemplares vendidos. Diez personas sin relación alguna entre sí son reunidas en un misterioso islote de la costa inglesa por un tal Sr. Owen,"
+    },
+    {
+        "nom":"Don Quijote de la Mancha",
+        "salida":1605,
+        "autor":"Miguel de Cervantes Saavedra",
+        "desc":"La novela consta de dos partes: El ingenioso hidalgo don Quijote de la Mancha, publicada con fecha de 1605, aunque impresa en diciembre de 1604, momento en que ya debió poder leerse en Valladolid, 5 y la Segunda parte del ingenioso caballero don Quijote de la Mancha, publicada en 1615."
+    },
+    {
+        "nom":"Conferencias",
+        "salida":1916,
+        "autor":"Ricardo López Barroso",
+        "desc":"La novela consta de dos partes: El ingenioso hidalgo don Quijote de la Mancha, publicada con fecha de 1605, aunque impresa en diciembre de 1604, momento en que ya debió poder leerse en Valladolid, 5 y la Segunda parte del ingenioso caballero don Quijote de la Mancha, publicada en 1615."
+    },
+    {
+        "nom":"Memoria sobre el tiro a rebote",
+        "salida":1947,
+        "autor":"Luis Gautier",
+        "desc":"La novela empieza con Edmundo (Edmond) Dantès volviendo a Marsella, donde se encuentra con su familia y sus amigos. Dantès está a punto de recibir una promoción a capitán en la casa naviera mercante donde se encuentra empleado, y se apresta igualmente a casarse con una bella española, Mercedes [Mercédès, sic, en francés] Herrera."
+    },
+    {
+        "nom":"Francois le Champi",
+        "salida":1851,
+        "autor":"George Sand",
+        "desc":"La novela empieza con Edmundo (Edmond) Dantès volviendo a Marsella, donde se encuentra con su familia y sus amigos. Dantès está a punto de recibir una promoción a capitán en la casa naviera mercante donde se encuentra empleado, y se apresta igualmente a casarse con una bella española, Mercedes [Mercédès, sic, en francés] Herrera."
+    }
+    
+]

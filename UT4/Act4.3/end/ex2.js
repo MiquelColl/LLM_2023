@@ -216,7 +216,7 @@ const productsList = [
   function ex3Filter(products){
       let newProducts=products.filter(pro=> pro.price > 100 && 
                                             pro.price < 500 && 
-                                          pro.category ==="ELEC"); 
+                                            pro.category ==="ELEC"); 
       return newProducts;
   }
   console.log("Ex.3:", ex3Filter(productsList));
