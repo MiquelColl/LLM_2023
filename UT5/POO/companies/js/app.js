@@ -15,8 +15,8 @@ function getCompany() {
 
             const employeesList = [];
             com.employees.forEach(emp => {
-                const empObj = new Employee(emp.id, emp.first_name, emp.last_name, emp.salary)
-                employeesList.push(empObj)
+                const empObj = new Employee(emp.id, emp.first_name, emp.last_name, emp.salary);
+                employeesList.push(empObj);
             })
 
             const company = new Company(com.id, com.name, com.web, com.email ,employeesList);

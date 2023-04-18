@@ -13,7 +13,7 @@ export class Company{
     render(){
         let employeesHTML="";
         this.employees.forEach(emp => {
-            employeesHTML=emp.render()
+            employeesHTML+=emp.render()
         });
         return `
             <div>${this.id}</div>
